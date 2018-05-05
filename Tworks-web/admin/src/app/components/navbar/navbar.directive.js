@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('admin')
+    .module('adminLibrary')
     .directive('acmeNavbar', acmeNavbar);
 
   /** @ngInject */

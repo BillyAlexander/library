@@ -1,7 +1,10 @@
 {
-  "name": "admin",
+  "name": "adminLibrary",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "angular-ui-utils": "^0.1.1",
+    "gulp-run-sequence": "^0.3.2"
+  },
   "scripts": {
     "test": "gulp test"
   },

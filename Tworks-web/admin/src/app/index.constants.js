@@ -3,7 +3,7 @@
   'use strict';
 
   angular
-    .module('admin')
+    .module('adminLibrary')
     .constant('malarkey', malarkey)
     .constant('moment', moment);
 

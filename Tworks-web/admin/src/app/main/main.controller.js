@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('admin')
+    .module('adminLibrary')
     .controller('MainController', MainController);
 
   /** @ngInject */
@@ -11,7 +11,7 @@
 
     vm.awesomeThings = [];
     vm.classAnimation = '';
-    vm.creationDate = 1525409933197;
+    vm.creationDate = 1525483023230;
     vm.showToastr = showToastr;
 
     activate();

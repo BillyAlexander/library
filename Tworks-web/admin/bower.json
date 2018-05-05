@@ -1,5 +1,5 @@
 {
-  "name": "admin",
+  "name": "adminLibrary",
   "version": "0.0.0",
   "dependencies": {
     "angular-animate": "~1.5.3",
@@ -17,7 +17,33 @@
     "angular-toastr": "~1.5.0",
     "moment": "~2.10.6",
     "animate.css": "~3.4.0",
-    "angular": "~1.5.3"
+    "angular": "~1.5.3",
+    "jquery-ui": "^1.12.1",
+    "jquery-slimscroll": "^1.3.8",
+    "angular-translate": "^2.15.2",
+    "ng-idle": "^1.3.2",
+    "oclazyload": "^1.1.0",
+    "metisMenu": "^2.7.0",
+    "PACE": "pace#^1.0.2",
+    "underscore": "^1.8.3",
+    "ngstorage": "^0.3.11",
+    "socket.io-client": "^2.0.3",
+    "pako": "^1.0.5",
+    "angular-datepicker": "^2.0.3",
+    "ng-img-crop": "ngImgCrop#^0.3.2",
+    "ng-file-upload": "^12.2.13",
+    "angular-ui-tree": "^2.22.5",
+    "angular-ui-select": "^0.19.8",
+    "iCheck": "^1.0.2",
+    "angular-translate-loader-static-files": "^2.15.2",
+    "wow": "^1.1.2",
+    "angular-chosen-localytics": "^1.8.0",
+    "angular-block-ui": "^0.2.2",
+    "angular-elastic": "^2.5.1",
+    "angular-bootstrap-lightbox": "^0.12.0",
+    "textAngular": "^1.5.16",
+    "big.js": "^5.0.3",
+    "alertifyjs": "^1.0.11"	
   },
   "devDependencies": {
     "angular-mocks": "~1.5.3"
@@ -30,7 +56,8 @@
         "assets/fonts/bootstrap/glyphicons-halflings-regular.svg",
         "assets/fonts/bootstrap/glyphicons-halflings-regular.ttf",
         "assets/fonts/bootstrap/glyphicons-halflings-regular.woff",
-        "assets/fonts/bootstrap/glyphicons-halflings-regular.woff2"
+        "assets/fonts/bootstrap/glyphicons-halflings-regular.woff2",
+        "assets/javascripts/bootstrap.js"		
       ]
     }
   },

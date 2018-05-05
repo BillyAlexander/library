@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-      .module('admin')
+      .module('adminLibrary')
       .service('webDevTec', webDevTec);
 
   /** @ngInject */
