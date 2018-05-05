@@ -12,22 +12,23 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.Twoks.Twoks.module.user.entity.AdminUser;
 import com.Twoks.Twoks.module.user.service.AdminUserService;
+import com.Twoks.Twoks.utils.constants.Constants;
 
 @RestController
-@RequestMapping(value = "api/adminUser", produces = MediaType.APPLICATION_JSON_VALUE)
+@RequestMapping(value = Constants.APP + "api/adminUser", produces = MediaType.APPLICATION_JSON_VALUE)
 public class AdminUserController {
-	
+
 	@Autowired
 	private AdminUserService adminUserService;
 
 	public AdminUserService getAdminUserService() {
 		return adminUserService;
 	}
-	
+
 	@RequestMapping(value = "getAllAdminUsers", method = RequestMethod.GET)
-	public ResponseEntity<?> getAllAdminUser(){
+	public ResponseEntity<?> getAllAdminUser() {
 		List<AdminUser> adminUsers = adminUserService.getAllAdminUsers();
-		return new ResponseEntity<List<AdminUser>>(adminUsers,HttpStatus.OK);
+		return new ResponseEntity<List<AdminUser>>(adminUsers, HttpStatus.OK);
 	}
 
 }
