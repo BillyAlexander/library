@@ -19,8 +19,12 @@ gulp.task('scripts', function() {
 });
 
 function buildScripts() {
-  return gulp.src(path.join(conf.paths.src, '/app/**/*.js'))
-    .pipe($.eslint())
-    .pipe($.eslint.format())
-    .pipe($.size())
+  return gulp.src([
+    path.join(conf.paths.src, '/app/**/*.js'),
+    path.join('!' + conf.paths.src, '/app/resources/**/*.js'),
+    //path.join('!' + conf.paths.src, '/app/modules/administration/catalogs/controllers/catalogs.admin.controller.js')
+  ])
+  .pipe($.eslint())
+  .pipe($.eslint.format())
+  .pipe($.size())
 };
