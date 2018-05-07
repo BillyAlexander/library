@@ -15,18 +15,30 @@ public class AdminUserService extends BaseService<AdminUser> {
 	public AdminUserService() {
 		super(AdminUser.class);
 	}
-	
+
 	@Autowired
 	private AdminUserRepo adminUserRepo;
-	
+
 	public AdminUserRepo getAdminUserRepo() {
 		return adminUserRepo;
 	}
 
 	public List<AdminUser> getAllAdminUsers() {
-		
-		List<AdminUser> adminUsers = adminUserRepo.findAll();		
+		List<AdminUser> adminUsers = adminUserRepo.findAll();
 		return adminUsers;
 	}
+	
+	public AdminUser saveUser(AdminUser newUser) {
+		AdminUser newAdminUser = adminUserRepo.save(newUser);
+		return newAdminUser;
+	}
+	
+	public void deleteUserById(Long id) {
+		AdminUser adminUser = getAdminUserRepo().getOne(id);
+		if(adminUser != null) {
+			adminUser.setStatus(false);
+			adminUserRepo.save(adminUser);
+		}
+	}	
 
 }
